@@ -1,0 +1,321 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Barra superior de navegacion */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0%;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: white;
+    padding: 1rem;
+    z-index: 1;
+}
+
+.icons {
+    border: 5px solid white;
+    padding: 5px;
+}
+
+.icons:hover {
+    background-color: rgb(233, 233, 233);
+    border-radius: 50px;
+}
+
+.nav_icons {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.black_button a {
+    background-color: black;
+    padding: 1rem; 
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.create_button a {
+    padding: 1rem; 
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    display: inline;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+input {
+    background-color: transparent;
+    width: 100%;
+    font-size: 17px;
+}
+
+.search-box {
+    background-color: rgb(233, 233, 233);
+    border-radius: 30px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.search-box:hover {
+    background-color: rgb(230, 228, 228);
+} 
+
+.img_profile {
+    width: 45px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.img_profile:hover {
+    background-color: rgb(230, 228, 228);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 110px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  /* Seccion principal de fotos */
+
+.container {
+    display: grid;
+/*     grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);   */
+/*     grid-template-columns: repeat(auto-fill, minmax(240px, 240px));
+    margin: 6rem 2rem; */
+    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-auto-rows: 1rem;
+    gap: 1rem; 
+    justify-content: center;
+    padding-top: 6rem;
+    margin: 0 1.5rem;
+}
+
+.img_item {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.item {
+    position:relative;
+}
+
+.uno {
+    grid-row-end: span 10;
+}
+
+.dos {
+    grid-row-end: span 15;
+}
+
+.tres {
+    grid-row-end: span 17;
+}
+
+.cuatro {
+    grid-row-end: span 12;
+}
+
+.cinco {
+    grid-row-end: span 13;
+}
+
+.seis {
+    grid-row-end: span 10;
+}
+
+.siete {
+    grid-row-end: span 15;
+}
+
+.ocho {
+    grid-row-end: span 15;
+}
+
+.nueve {
+    grid-row-end: span 14;
+}
+
+.diez {
+    grid-row-end: span 17;
+}
+
+.once {
+    grid-row-end: span 12;
+}
+
+.doce {
+    grid-row-end: span 15;
+}
+
+.trece {
+    grid-row-end: span 18;
+}
+
+.catorce {
+    grid-row-end: span 14;
+}
+
+.quince {
+    grid-row-end: span 12;
+}
+
+.dieciseis {
+    grid-row-end: span 14;
+}
+
+.diecisiete {
+    grid-row-end: span 16;
+}
+
+.dieciocho {
+    grid-row-end: span 10;
+}
+
+.diecinueve {
+    grid-row-end: span 17;
+}
+
+.veinte {
+    grid-row-end: span 15;
+}
+
+.veintuno {
+    grid-row-end: span 12;
+}
+
+.veintidos {
+    grid-row-end: span 17;
+}
+
+.veintitres {
+    grid-row-end: span 15;
+}
+
+.veinticuatro {
+    grid-row-end: span 12;
+}
+
+.veinticinco {
+    grid-row-end: span 14;
+}
+
+.veintiseis {
+    grid-row-end: span 12;
+}
+
+.veintisiete {
+    grid-row-end: span 17;
+}
+
+.veintiocho {
+    grid-row-end: span 15;
+}
+
+.veintinueve {
+    grid-row-end: span 15;
+}
+
+.treinta {
+    grid-row-end: span 14;
+}
+
+.treintaiuno {
+    grid-row-end: span 12;
+}
+
+
+button {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    background-color: red;
+    color: white;
+    font-size: 17px;
+    padding: .8rem 1.2rem;
+    border-radius: 25px;
+    visibility: hidden;
+    cursor: pointer;
+} 
+
+.button_arrow {
+    position: absolute;
+    bottom: 3%;
+    right: 20%;
+    background-color:white;
+    opacity: .5;
+    border-radius: 50px;
+    visibility: hidden;
+    padding: 0.5rem;
+    cursor: pointer;
+} 
+
+.button_points {
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    background-color:white;
+    opacity: .5;
+    border-radius: 50px;
+    visibility: hidden;
+    padding: 0.5rem;
+    cursor: pointer;
+} 
+
+.item:hover {
+    opacity: 0.8;
+}
+
+.item:hover > button {
+    visibility: visible;
+}
+
+.item:hover > .button_arrow {
+    visibility: visible;
+}
+
+.item:hover > .button_points {
+    visibility: visible;
+}
