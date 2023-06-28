@@ -13,9 +13,17 @@
             <a href="https://www.pinterest.com.mx/"><img src="./imagenes/svgexport-1.svg" alt="Icono Pinterest"></a>
         </div>
         <div class="nav_icons">
-            <aside class="black_button"><a href="">Home</a></aside>
-            <aside class="create_button"><a href="">Create</a></aside>
-            <aside><img src="./imagenes/svgexport-5.svg" alt=""></aside>
+            <aside class="black_button"><a href="#">Home</a></aside>
+            <aside class="create_button" onclick="myFunction()">
+                <a href="#">Create</a>
+            </aside>
+            <aside onclick="myFunction()">
+                <img src="./imagenes/svgexport-5.svg" alt="">
+            </aside>
+            <aside class="dropmenu" id="myPopup">
+                <a href="#">Create Idea Pin</a>
+                <a href="#">Create Pin</a>
+            </aside>
         </div>
         <div class="search-box">
             <img src="./imagenes/svgexport-2.svg" alt="icono lupa">
@@ -233,5 +241,11 @@
             <img class="button_points" src="./imagenes/svgexport-8.svg" alt="">
         </article>
     </main>
+    <script>
+        function myFunction() {
+            var dropmenu = document.getElementById("myPopup");
+            dropmenu.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>

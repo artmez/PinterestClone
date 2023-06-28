@@ -40,6 +40,7 @@ nav {
     align-items: center;
     padding: 0 1rem;
     cursor: pointer;
+    position: relative;
 }
 
 .black_button a {
@@ -54,6 +55,37 @@ nav {
     padding: 1rem; 
     text-decoration: none;
     color: black;
+}
+
+.dropmenu {
+    position: absolute;
+    top: 200%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0.5rem 1rem;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.dropmenu a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+ 
+}
+
+.dropmenu a:hover {
+    background-color: rgb(239, 235, 235);
+    border-radius: 10px;
+}
+
+.show {
+    visibility: visible;
 }
 
 form {
@@ -118,11 +150,7 @@ input {
 
 .container {
     display: grid;
-/*     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(4, 1fr);   */
-/*     grid-template-columns: repeat(auto-fill, minmax(240px, 240px));
-    margin: 6rem 2rem; */
-    grid-template-columns: repeat(auto-fill, 16rem);
+    grid-template-columns: repeat(auto-fit, 16rem);
     grid-auto-rows: 1rem;
     gap: 1rem; 
     justify-content: center;
