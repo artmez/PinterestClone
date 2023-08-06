@@ -148,7 +148,7 @@ input {
 
   /* Seccion principal de fotos */
 
-.container {
+.container1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, 16rem);
     grid-auto-rows: 1rem;
