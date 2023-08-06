@@ -123,12 +123,12 @@ input {
     background-color: rgb(230, 228, 228);
 }
 
-.tooltip {
+.tooltip1 {
     position: relative;
     display: inline-block; 
 }
 
-.tooltip .tooltiptext {
+.tooltip1 .tooltiptext1 {
     visibility: hidden;
     width: 110px;
     background-color: black;
@@ -142,7 +142,7 @@ input {
     margin-left: -80px;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip1:hover .tooltiptext1 {
     visibility: visible;
   }
 
